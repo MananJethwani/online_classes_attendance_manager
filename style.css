@@ -1,0 +1,55 @@
+.b1{
+    position: relative;
+    top:60px;
+    left:100px;
+    background-color: #14367D;
+    color: white;
+    border-radius: 30px;
+    height: 550px;
+    width: 500px;
+    box-shadow: 10px 10px 0px #FE20CE;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.t1{
+    position: relative;
+    top:30px;
+    left:40px;
+    background-color: #15b2e5;
+    height: 400px;
+    width: 420px;
+    border-radius: 30px;
+}
+
+.txt{
+    position: relative;
+    top:-20px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.txt3{
+    position: relative;
+    color:white;
+    font-size: medium;
+    top: 50px;
+    left:40px;
+    letter-spacing: 0.5px;
+}
+
+.txt2{
+    position: relative;
+    left:55px;
+    top:30px;
+}
+
+th, td {  
+    text-align:center; 
+    padding:-10px;
+} 

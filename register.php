@@ -1,41 +1,92 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Signin Template for Bootstrap</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
 
-  <body class="text-center">
-      <div class="container" style="margin-top: 150px;">
-          <form method="post" action="regUser.php">
-              <div class="form-group row">
-                    <h1 class="font-weight-normal">Please register</h1>
-              </div>
-              <div class="form-group row">
-                    <label for="Email" class="sr-only">Email address</label>
-                    <input name="Email" type="email" id="Email" class="form-control" placeholder="Email address" required autofocus>
-              </div>
-              <div class="form-group row">
-                    <label for="Password" class="sr-only">Password</label>
-                    <input name="Password" type="password" id="Password" class="form-control" placeholder="Password" required>
-              </div>
-              <div class="form-group row">
-                <select name="userType" id="userType" class="form-control form-control-sm">
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                </select>
-              </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Login">Sign in</button>
-              <div class="form-group row">
-                    <h4> Already a user <a href="loginForm.php">signin here</a>. </h4>
-              </div>
-          </form>
-      </div>
-  </body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- <title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login page</title> -->
+	<title>Registration page</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<style>
+		body {
+			background-image: url("background.jpg");
+			background-repeat: no-repeat;
+			background-size:cover;
+			background-position:center;
+			height: 700px;
+		}
+		button .btn{
+			padding: 10px;
+			margin: 10px auto;
+			font-size: 15px;
+			border: none;
+			border-radius: 5px;
+			background-color: #5CDB95;
+
+		}
+		aside{
+			margin: 10px;
+			position:relative;
+			top:50px;
+			left:50px;
+		}
+
+		#profile{
+			float:top;
+			font-family: sans-serif;
+			text-align: center;
+			max-width: 300px;
+			height:	325px;
+			box-shadow: 10px 10px 0px #FE20CE;
+			margin-left: 50px;
+			margin-top:50px;
+			padding: 15px;
+			background: #14367D;
+			color:white;
+			border-radius:40px;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	
+	<header>
+		<nav class="navbar" style="background: rgb(2,0,36);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,40,93,1) 0%, rgba(44,161,185,1) 100%);">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" style="position:relative; left:100px; color:white; ">YourManager</a>
+			<a class="btn btn-primary" href="register.php" role="button" style="position:relative; left:545px; color:white; background:#FE20CE; border-color:#FE20CE; border-radius:15px;margin-right:0px;">Sign Up</a>
+			<a class="btn btn-primary" href="loginForm.php" role="button" style="color:white; background:#FE20CE; border-color:#FE20CE; border-radius:15px; width:70px; margin-right:40px;">Login</a>
+  		</div>
+		</nav>
+	</header>
+
+	<aside id="profile">
+	<form method="post" action="regUser.php">
+	<h3 style="font-weight:bold">CREATE ACCOUNT</h3><br>
+		<div class="input-group">
+            <label for="Email" class="sr-only">Email address</label>
+            <input name="Email" type="email" id="Email" class="form-control" placeholder="Email address" required autofocus>
+		</div><br>
+		<div class="input-group">
+            <label for="Password" class="sr-only">Password</label>
+            <input name="Password" type="password" id="Password" class="form-control" placeholder="Password" required>
+		</div><br>
+		<div class="input-group">
+            <select name="userType" id="userType" class="form-control form-control-sm">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+		</div><br>
+		<div class="input-group">
+			<button type="submit" name="submit" value="Login" class="btn" style="color: white; background: #FE20CE; margin-left:90px;">Register</button>
+		</div>
+	</form>	
+	</aside>
+</body>
 </html>

@@ -18,6 +18,7 @@ if($Email && $Password){
         die("Unable to select database");
     }
     $qry="INSERT INTO users VALUES('$Email','$Password','$UserType')";
+    
     $result=mysqli_query($link,$qry);
     if($result == 1){
         $count = 1;
